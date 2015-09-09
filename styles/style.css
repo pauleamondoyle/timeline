@@ -1,0 +1,181 @@
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+	min-height: 100%;
+}
+
+header{
+	max-width: 1500px;
+	height: 30px;
+	background-color: white;
+	margin: 0;
+	margin-bottom: 100px;
+}
+
+/*CONTAINER AND COLUMN LAYOUT*/
+
+#container{
+	max-width: 1000px;
+	display: flex;
+	margin: auto;
+}
+
+#column1{
+	position: relative;
+	/* display: inline-block; */
+	flex: 1;
+	border-right: 16px solid #B8DCF5;
+	vertical-align: top;
+	min-width: 200px;
+}
+
+#column2{
+	display: inline-block;
+	flex: 4;
+	vertical-align: top;
+	margin-left: 60px;
+	margin-right: 5px;
+}
+
+/*ENTRY LAYOUT*/
+
+.new-entry{
+	position: relative;
+	border-radius: 5px;
+	color: white;
+	padding: 30px;
+	margin-bottom: 30px;
+}
+
+#odd hr{
+    border: 0;
+    height: 1px;
+    background-color: #AED7F0;
+    margin: 0;
+}
+
+#even hr{
+    border: 0;
+    height: 1px;
+    background-color: #71ABD1;
+    margin: 0;
+}
+
+
+#odd{
+	background-color: #80C0E9;
+}
+
+#even{
+	background-color: #5096C6;
+}
+
+.new-entry h2{
+	font-size: 24px;
+	margin-bottom: 12px;
+	margin-top: 0px;
+}
+
+.new-entry p{
+	font-size: 18px;
+}
+
+#pointer-odd{
+	background-color: #80C0E9;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	transform: rotate(45deg);
+	top: 35px;
+	left: -10px;
+	visibility: visible;
+}
+
+#pointer-even{
+	background-color: #5096C6;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	transform: rotate(45deg);
+	top: 35px;
+	left: -10px;
+	visibility: visible;
+}
+
+/*DATE, TIME, & ICON LAYOUT*/
+
+#icon{
+	position: absolute;
+	border-radius: 50%;
+	background-color: #5FA6D5;
+	border: 7px solid #B8DCF5;
+	color: #ffffff;
+	top: 13px;
+	left: -104px;
+	font-size: 47px;
+	width: 55px;
+	height: 55px;
+	text-align: center;
+	line-height: 47px;
+}
+
+
+
+#date{
+	position: absolute;
+	color: #CDD2DB;
+	font-size: 15px;
+	top: 0;
+	left: -190px;	
+}
+
+#time{
+	position: absolute;
+	color: #80C0E9;
+	font-size: 50px;
+	top: 0;
+	left: -250px;
+	margin-top: 15px;
+}
+
+@media screen and (max-width: 600px){
+	
+	#column1{
+		min-width: 10px;
+	
+		/* vertical-align: -34px; */
+	}
+
+	.new-entry{
+		display: block;
+		position: relative;
+	
+		margin-bottom: 112px;
+	}
+	
+	#icon{
+		top: -65px;
+		left: -104px;
+	}
+
+	#date{
+		/* display: block; */	
+		top: -83px;	
+		left: 0px;
+	}
+
+	#time{
+		display: block;
+		top: -86px;
+		left: 0;
+	}
+
+	#pointer-odd{
+		visibility: hidden;
+	}
+
+	#pointer-even{
+		visibility: hidden;
+	}
+
+}
+
